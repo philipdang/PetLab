@@ -21,6 +21,7 @@ private:
 class Cat: public Animal
 {
 public:
+    virtual void action() = 0;
     void back_shit_off_table()
     {
         cout << "Maintains eye contact. Asserts dominance." << endl;
@@ -30,6 +31,7 @@ public:
 class Dog: public Animal
 {
 public:
+    virtual void action() = 0;
     void eat_poop()
     {
         cout << "Yum." << endl;
@@ -39,6 +41,7 @@ public:
 class Snake: public Animal
 {
 public:
+    virtual void action() = 0;
     void snek()
     {
         cout << "snek snek snek" << endl;
